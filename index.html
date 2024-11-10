@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambié 'en' por 'es' ya que el contenido es en español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <!-- Corregí el valor de la política CSP y cambié el nombre a 'unsafe-inline' -->
+   
+    <title>PWA lista de actividades</title>
+    <!-- Asegúrate de que el nombre del archivo 'manifest.json' sea correcto -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista de tarea</h1>
+    <div class="todo-container">
+        <input type="text" id="todo-input" placeholder="Nueva tarea">
+        <button id="add-btn">Agregar una tarea</button>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
